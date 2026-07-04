@@ -19,7 +19,7 @@ import (
 func main() {
 	app := fiber.New(fiber.Config{
 		AppName:   "Thryvo v0.0.1",
-		BodyLimit: 10 * 1024 * 1024,
+		BodyLimit: 50 * 1024 * 1024,
 	})
 
 	app.Use(logger.New(logger.Config{}))
